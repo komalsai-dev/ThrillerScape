@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap');
+
+.section-ten-bg {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(circle at 60% 30%, #1ed6ff 0%, #1a1a4b 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px 60px 10px;
+  font-family: 'Share Tech Mono', 'Orbitron', monospace, sans-serif;
+  overflow: hidden;
+}
+
+.section-ten-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.section-ten-two-col {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 64px;
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+
+.section-ten-col {
+  flex: 1 1 0;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.section-ten-image-frame {
+  width: 100%;
+  max-width: 420px;
+  min-width: 220px;
+  aspect-ratio: 16/9;
+  background: #101a2a;
+  border-radius: 14px;
+  border: 3px solid #42dcff;
+  box-shadow: 0 0 24px #42dcff33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.section-ten-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #000;
+}
+
+.section-ten-highlights-table {
+  width: 100%;
+  align-items: flex-end;
+  text-align: right;
+  margin-left: 0;
+}
+
+.section-ten-highlights-title {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+.section-ten-highlights-list {
+  color: #fff;
+  font-size: 1.02rem;
+  margin: 0 0 0.5em 0;
+  padding-left: 1.2em;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: left;
+}
+
+.section-ten-highlights-list li {
+  margin-bottom: 0.2em;
+}
+
+.section-ten-tech-table-title-row {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.05rem;
+  color: #42dcff;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.section-ten-tech-title {
+  flex: 1;
+  text-align: left;
+}
+
+.section-ten-tech-table {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0.2em 1.2em;
+  font-size: 1.01rem;
+  color: #b8eaff;
+  font-family: 'Share Tech Mono', monospace;
+  justify-items: end;
+  text-align: right;
+}
+
+.section-ten-tech-label, .section-ten-tech-value {
+  text-align: right;
+}
+
+.section-ten-descriptions {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-ten-description-block {
+  flex: 1 1 0;
+  background: rgba(16, 26, 42, 0.7);
+  border-radius: 12px;
+  padding: 24px 28px;
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  box-shadow: 0 0 18px #42dcff22;
+  min-width: 260px;
+  max-width: 540px;
+}
+
+.section-ten-ride-title {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #42dcff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+.section-ten-ride-title.crazy-bus {
+  color: #00ffe7;
+}
+
+.section-ten-ride-highlight {
+  color: #00ffe7;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+.section-ten-ride-desc {
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+}
+
+@media (max-width: 1100px) {
+  .section-ten-two-col {
+    gap: 32px;
+    max-width: 98vw;
+  }
+  .section-ten-col {
+    max-width: 98vw;
+  }
+  .section-ten-descriptions {
+    gap: 24px;
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-ten-two-col {
+    flex-direction: column;
+    gap: 32px;
+    max-width: 98vw;
+  }
+  .section-ten-col {
+    align-items: center !important;
+    text-align: center !important;
+    max-width: 98vw;
+  }
+  .section-ten-highlights-table,
+  .section-ten-tech-table-title-row,
+  .section-ten-tech-table {
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .section-ten-descriptions {
+    flex-direction: column;
+    gap: 18px;
+    max-width: 98vw;
+  }
+  .section-ten-description-block {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 18px 8px;
+  }
+}

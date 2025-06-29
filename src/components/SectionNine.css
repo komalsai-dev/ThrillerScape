@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-.section-nine {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap');
 
 .section-nine-bg {
   position: absolute;
@@ -20,44 +10,464 @@
   opacity: 1;
 }
 
-.section-nine-content {
+.section-nine-new {
   position: relative;
-  z-index: 2;
   width: 100%;
-  max-width: 950px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 10px 20px 0 20px;
-  margin-top: 0;
+  padding: 40px 10px 60px 10px;
+  font-family: 'Share Tech Mono', 'Orbitron', monospace, sans-serif;
+  overflow: hidden;
 }
 
-.section-nine-title span {
-  font-family: 'Orbitron', 'Share Tech Mono', 'Fira Mono', 'Consolas', 'Roboto Mono', monospace, sans-serif;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  display: block;
-  text-shadow: 0 2px 12px #00eaff88;
-}
-
-.section-nine-content p {
-  font-size: 0.92rem;
-  line-height: 1.4;
-  margin: 0 0 10px 0;
-  color: #b8eaff;
-  font-family: 'Share Tech Mono', 'Fira Mono', 'Consolas', 'Roboto Mono', monospace;
-  text-align: left;
+.section-nine-content-new {
+  position: relative;
+  z-index: 2;
   width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.section-nine-main-title {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 2.1rem;
+  font-weight: 900;
+  color: #42dcff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px #42dcff99;
+  margin-bottom: 0.2em;
+}
+
+.section-nine-highlighted {
+  color: #42dcff;
+  font-weight: 700;
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.1rem;
+  margin-bottom: 0.5em;
+}
+
+.section-nine-link {
+  color: #42dcff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.section-nine-description {
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin-bottom: 0.5em;
   max-width: 900px;
 }
 
-@media (max-width: 800px) {
-  .section-nine-content {
-    padding: 24px 10px 50px 10px;
+.section-nine-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.section-nine-highlights-table {
+  width: 100%;
+  align-items: flex-end;
+  text-align: right;
+  margin-left: 0;
+}
+
+.section-nine-highlights-title {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.1rem;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.2em;
+}
+
+.section-nine-highlights-list {
+  color: #fff;
+  font-size: 1.02rem;
+  margin: 0 0 0.5em 0;
+  padding-left: 1.2em;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.section-nine-highlights-list li {
+  margin-bottom: 0.2em;
+}
+
+.section-nine-tech-table-title-row {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.05rem;
+  color: #42dcff;
+  font-weight: 700;
+  margin-bottom: 0.2em;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.section-nine-tech-title {
+  flex: 1;
+  text-align: left;
+}
+
+.section-nine-tech-table {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 0.2em 1.2em;
+  font-size: 1.01rem;
+  color: #b8eaff;
+  font-family: 'Share Tech Mono', monospace;
+  justify-items: end;
+  text-align: right;
+}
+
+.section-nine-tech-label, .section-nine-tech-value {
+  text-align: right;
+}
+
+.section-nine-image-frame {
+  flex: 1 1 320px;
+  max-width: 420px;
+  min-width: 220px;
+  aspect-ratio: 16/9;
+  background: #101a2a;
+  border-radius: 14px;
+  border: 3px solid #42dcff;
+  box-shadow: 0 0 24px #42dcff33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section-nine-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #000;
+}
+
+.section-nine-mini-title {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #42dcff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.section-nine-mini-description {
+  color: #fff;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin-bottom: 0.5em;
+  max-width: 900px;
+  text-align: right;
+}
+
+.section-nine-mini-highlight {
+  color: #42dcff;
+  font-weight: 700;
+}
+
+.section-nine-flex-row-alt {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 64px;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+.section-nine-image-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1 1 420px;
+  min-width: 220px;
+  max-width: 420px;
+  gap: 28px;
+}
+
+.section-nine-content-right {
+  flex: 2 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 260px;
+  max-width: 700px;
+}
+
+.section-nine-mini-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+  margin-top: 2.5em;
+  margin-bottom: 0;
+}
+
+.section-nine-mini-all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.section-nine-mini-right {
+  flex: 1 1 100%;
+  min-width: 220px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5em;
+}
+
+.section-nine-mini-title {
+  margin-top: 0;
+}
+
+.section-nine-flex-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 56px;
+  width: 100%;
+  margin-bottom: 2.5em;
+}
+
+.section-nine-left-col {
+  flex: 1 1 380px;
+  min-width: 220px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 28px;
+}
+
+.section-nine-right-col {
+  flex: 2 1 500px;
+  min-width: 260px;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 18px;
+}
+
+.section-nine-mini-centered {
+  width: 100%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  text-align: right;
+  padding: 0 0 24px 0;
+  margin-top: 0;
+}
+
+.section-nine-mini-title,
+.section-nine-mini-description,
+.section-nine-mini-highlight {
+  text-align: right;
+}
+
+.section-nine-mini-title {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+}
+
+.section-nine-mini-description {
+  margin-bottom: 0.5em;
+  max-width: 800px;
+  width: 100%;
+}
+
+.section-nine-centered-block {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.section-nine-centered-block .section-nine-main-title,
+.section-nine-centered-block .section-nine-mini-title,
+.section-nine-centered-block .section-nine-description,
+.section-nine-centered-block .section-nine-mini-description,
+.section-nine-centered-block .section-nine-highlighted,
+.section-nine-centered-block .section-nine-highlights-title,
+.section-nine-centered-block .section-nine-highlights-list,
+.section-nine-centered-block .section-nine-tech-table-title-row,
+.section-nine-centered-block .section-nine-tech-table {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-nine-centered-block .section-nine-image-frame {
+  margin: 0 auto 18px auto;
+}
+
+.section-nine-centered-block .section-nine-highlights-table {
+  margin: 0 auto 18px auto;
+}
+
+.section-nine-two-col {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 64px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto 0 auto;
+}
+
+.section-nine-col {
+  flex: 1 1 0;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.section-nine-col-left {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.section-nine-col-right {
+  align-items: flex-start;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  .section-nine-two-col {
+    gap: 32px;
     max-width: 98vw;
+  }
+  .section-nine-col {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-nine-two-col {
+    flex-direction: column;
+    gap: 32px;
+    max-width: 98vw;
+  }
+  .section-nine-col {
+    align-items: center !important;
+    text-align: center !important;
+    max-width: 98vw;
+  }
+  .section-nine-col-left, .section-nine-col-right {
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .section-nine-content-new {
+    max-width: 98vw;
+    gap: 18px;
+  }
+  .section-nine-flex-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .section-nine-image-frame {
+    max-width: 98vw;
+    min-width: 120px;
+    margin-top: 18px;
+  }
+  .section-nine-flex-row-alt {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .section-nine-image-col,
+  .section-nine-content-right {
+    max-width: 98vw;
+    min-width: 0;
+  }
+  .section-nine-flex-columns {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .section-nine-left-col,
+  .section-nine-right-col {
+    max-width: 98vw;
+    min-width: 0;
+    align-items: flex-start;
+  }
+  .section-nine-mini-flex {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2em;
+  }
+  .section-nine-mini-all, .section-nine-mini-right {
+    max-width: 98vw;
+    min-width: 0;
+    align-items: flex-start;
+  }
+  .section-nine-mini-centered {
+    max-width: 98vw;
+    padding: 0 0 12px 0;
+    margin-left: 0;
+    margin-right: 0;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+  .section-nine-mini-title {
+    margin-top: 0;
+  }
+  .section-nine-centered-block {
+    max-width: 98vw;
+    margin: 0 auto 24px auto;
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-nine-main-title {
+    font-size: 1.1rem;
+  }
+  .section-nine-mini-title {
+    font-size: 1rem;
+  }
+  .section-nine-content-new {
+    padding: 0;
   }
 } 

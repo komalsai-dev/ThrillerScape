@@ -19,7 +19,7 @@ const cards = [
   },
   {
     title: 'VR & NON-VR CAR SIMULATOR',
-    image: 'vr-car-simulator.png', // placeholder, replace with actual image
+    image: 'vr-car-simulator.jpg', // placeholder, replace with actual image
     description: 'Get your heart racing with our single-seat VR Racing Car Simulator, offering an adrenaline-pumping experience as you speed through realistic VR tracks, with 2DOF (Degrees of Freedom) motion technology. Enjoy a fully immersive ride, enhanced as you feel every force, vibration, and drift, all while speeding through the circuits and leaving your competitors in the dust.'
   }
 ];
@@ -42,12 +42,19 @@ const SectionFour = () => {
         </div>
         <div className="section-four-card-grid">
           {cards.map((card, idx) => (
-            <div className="section-four-card" key={card.title}>
+            <div
+              className={`section-four-card ${idx % 2 === 1 ? 'reverse' : ''}`}
+              key={card.title}
+            >
               <div className="section-four-card-frame">
                 <img src={process.env.PUBLIC_URL + '/assets/' + card.image} alt={card.title} />
               </div>
               <div className="section-four-card-content">
-                <h3>{card.title}</h3>
+                <h3>
+                  {card.title.split(' ').map((word, i) =>
+                    i === 0 ? <span key={i} className="highlight">{word} </span> : word + ' '
+                  )}
+                </h3>
                 <p>{card.description}</p>
               </div>
             </div>

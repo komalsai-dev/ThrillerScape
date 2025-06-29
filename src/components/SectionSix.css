@@ -1,14 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
-
-.section-six {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Share+Tech+Mono&display=swap');
 
 .section-six-bg {
   position: absolute;
@@ -20,7 +10,19 @@
   opacity: 1;
 }
 
-.section-six-content {
+.section-six-new {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px 60px 10px;
+  font-family: 'Share Tech Mono', 'Orbitron', monospace, sans-serif;
+  overflow: hidden;
+}
+
+.section-six-content-new {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -29,115 +31,125 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 10px 20px 0 20px;
-  margin-top: 0;
+  gap: 32px;
 }
 
-.section-six-title span {
-  font-family: 'Orbitron', 'Share Tech Mono', 'Fira Mono', 'Consolas', 'Roboto Mono', monospace, sans-serif;
-  font-size: 2.1rem;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  display: block;
-  text-shadow: 0 2px 12px #00eaff88;
-}
-
-.section-six-futureline {
+.simulator-header-row {
+  width: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.simulator-title {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: 0 0 18px #42dcff99;
+  background: linear-gradient(90deg, #fff 60%, #42dcff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.simulator-title.car-title {
+  width: 100%;
+  text-align: left;
+  margin-top: 48px;
+  margin-bottom: 12px;
+  font-size: 2.2rem;
+}
+
+.simulator-logo {
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffe066;
+  letter-spacing: 0.12em;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.simulator-logo span {
+  color: #42dcff;
+  font-weight: 900;
+}
+
+.simulator-images-row {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
   margin: 0 0 18px 0;
   width: 100%;
-  max-width: 420px;
-  min-height: 28px;
-  filter: drop-shadow(0 0 8px #a9f6ff88);
 }
 
-.section-six-card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 32px;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto 28px auto;
-}
-
-.section-six-card {
-  background: rgba(10, 20, 40, 0.7);
-  border: 3px solid #3ad0ff;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px #00eaff33;
-  padding: 18px 18px 18px 18px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 18px;
-  min-height: 220px;
-  position: relative;
-}
-
-.section-six-card-frame {
-  min-width: 160px;
-  max-width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #0a1428;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px #00eaff22;
-  padding: 8px;
-}
-
-.section-six-card-frame img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+.simulator-img {
+  width: 320px;
+  height: 180px;
   object-fit: cover;
-  background: #000;
+  border-radius: 12px;
+  border: 2.5px solid #42dcff;
+  background: #111b2a;
+  box-shadow: 0 0 18px #42dcff33;
 }
 
-.section-six-card-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.section-six-card-content h3 {
-  font-family: 'Orbitron', 'Share Tech Mono', 'Fira Mono', 'Consolas', 'Roboto Mono', monospace, sans-serif;
-  font-size: 1.1rem;
+.simulator-description {
+  margin-top: 0;
+  font-size: 1.08rem;
   color: #fff;
-  margin: 0 0 10px 0;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+  line-height: 1.6;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: left;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 0;
 }
 
-.section-six-card-content p {
+.highlight-green {
+  color: #42dcff;
+  font-weight: 700;
+}
+
+.simulator-description-blue {
   color: #b8eaff;
-  font-family: 'Share Tech Mono', 'Fira Mono', 'Consolas', 'Roboto Mono', monospace;
-  font-size: 0.98rem;
-  line-height: 1.5;
-  margin: 0;
 }
 
 @media (max-width: 900px) {
-  .section-six-card-grid {
-    grid-template-columns: 1fr;
+  .section-six-content-new {
+    max-width: 98vw;
     gap: 18px;
   }
-  .section-six-content {
-    max-width: 98vw;
-  }
-  .section-six-card {
-    flex-direction: column;
-    align-items: center;
-    padding: 12px;
-  }
-  .section-six-card-frame {
+  .simulator-img {
+    width: 44vw;
     min-width: 120px;
-    max-width: 98vw;
-    padding: 4px;
+    height: 24vw;
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .simulator-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .simulator-title {
+    font-size: 1.2rem;
+  }
+  .simulator-title.car-title {
+    font-size: 1.1rem;
+    margin-top: 32px;
+  }
+  .simulator-img {
+    width: 44vw;
+    min-width: 80px;
+    height: 24vw;
+    min-height: 60px;
+  }
+  .section-six-content-new {
+    padding: 0;
   }
 } 
